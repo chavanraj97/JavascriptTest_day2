@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>day 2 first</title>
+    </head>
+    <body>
+        <div>find maximum number</div>
+        <button onclick="document.getElementById('demo').innerHTML = fun(a)">
+            findMax
+        </button>
+        <p id = "demo"></p>
+        <script>
+            var a = [1,3,21,5,4,5,6,9,16,15];
+            function fun(a){
+                a.sort(function(x,y){return x-y;});
+                return a[a.length - 1];
+            }
+           
+        </script>
+    </body>
+</html>
