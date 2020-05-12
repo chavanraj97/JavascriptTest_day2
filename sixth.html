@@ -5,11 +5,14 @@
     <body>
         <textarea id="txt1"></textarea>
         <textarea id = "txt2"></textarea>
-        <button onclick = "fun()"></button>
+        <button onclick = "fun()">click</button>
         <script>
-            fun() {
-                document.getElementById('txt1').innerHTML = "something";
-               alert(x);
+            function fun() {
+                var x = document.getElementById('txt1').value;
+                var y = document.getElementById('txt2').value;
+                document.getElementById('txt1').value = y ;
+                document.getElementById('txt2').value = x;
+            
             }
         </script>
     </body>
