@@ -3,15 +3,14 @@
         <title>day 2 sixth</title>
     </head>
     <body>
-        <textarea id="txt1"></textarea>
+        <textarea id="txt1" autofocus></textarea>
         <textarea id = "txt2"></textarea>
         <button onclick = "fun()">click</button>
         <script>
             function fun() {
-                var x = document.getElementById('txt1').value;
-                var y = document.getElementById('txt2').value;
-                document.getElementById('txt1').value = y ;
-                document.getElementById('txt2').value = x;
+                var t = document.getElementById('txt1').value;
+                document.getElementById('txt1').value = document.getElementById('txt2').value;
+                document.getElementById('txt2').value = t;
             
             }
         </script>
